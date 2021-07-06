@@ -2,20 +2,18 @@ package ar.edu.unlam.pb2.p2;
 
 public class Jugador extends Miembro {
 	
-	public Jugador(String nombre, String equipo, String tipo) {
-		super(nombre, equipo, tipo);
-		// TODO Auto-generated constructor stub
-	}
-	private Integer dni;
+	
 	private Integer nroCamiseta;
 	private String posicion;
 	
-	public Integer getDni() {
-		return dni;
+	public Jugador(String nombre, String equipo, String tipo, String dni, Integer nroCamiseta, String posicion) {
+		super(nombre, equipo, tipo, dni);
+		setNroCamiseta(nroCamiseta);
+		setPosicion(posicion);
 	}
-	public void setDni(Integer dni) {
-		this.dni = dni;
-	}
+
+	
+
 	public Integer getNroCamiseta() {
 		return nroCamiseta;
 	}
